@@ -1,0 +1,16 @@
+{
+  "name": "stock_or_crypto_price_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+},
+  "author": "eakchai.kn@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "redis": "^4.6.7",
+    "yahoo-finance": "^0.3.8"
+  }
+}
