@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "4ae1f912-db49-415b-b04c-426d8557a812",
+		"name": "stock_or_crypto_price_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3074686"
+	},
+	"item": [
+		{
+			"name": "stock-price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/stock-price?ticker=TSLA",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"stock-price"
+					],
+					"query": [
+						{
+							"key": "ticker",
+							"value": "TSLA"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "stock-price",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/stock-price?ticker=TSLA",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"stock-price"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "TSLA"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e-TqPDXW5Ujw/Ogc1MSIgrQYjoIgI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Jun 2023 18:59:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"name\": \"Tesla, Inc.\",\n        \"symbol\": \"TSLA\",\n        \"price\": 225.73\n    }\n}"
+				}
+			]
+		}
+	]
+}
